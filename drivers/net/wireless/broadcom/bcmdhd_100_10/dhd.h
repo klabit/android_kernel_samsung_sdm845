@@ -753,6 +753,9 @@ extern void copy_debug_dump_time(char *dest, char *src);
 
 #define DHDIF_FWDER(dhdif)      FALSE
 
+/*Let's manually define this for the sake of inline compilation*/
+#define ANDROID_PLATFORM_VERSION	9
+
 #if defined(CUSTOMER_HW4)
 #if defined(ANDROID_PLATFORM_VERSION)
 #if (ANDROID_PLATFORM_VERSION >= 9)

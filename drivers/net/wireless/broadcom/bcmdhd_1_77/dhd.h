@@ -2028,6 +2028,8 @@ extern uint dhd_pktgen_len;
 #ifdef SOFTAP
 extern char fw_path2[MOD_PARAM_PATHLEN];
 #endif
+/* Let's manually define the platform version for the sake of inline compiling*/
+#define ANDROID_PLATFORM_VERSION	9
 
 #if defined(ANDROID_PLATFORM_VERSION)
 #if (ANDROID_PLATFORM_VERSION < 7)
